@@ -34,9 +34,7 @@ button {
 
 header {
     background-color: var(--clr-dark);
-    padding: 0 1em;
     margin-bottom: 5rem;
-    text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -76,7 +74,7 @@ nav {
     background-color: var(--clr-med);
     border-radius: 50%;
     position: absolute;
-    top: 175px;
+    top: 200px;
     left: 70px;
     z-index: -1;
 }
@@ -111,3 +109,16 @@ nav {
     width: 100px;
 }
 
+@media (min-width: 475px) {
+    header {
+        justify-content: start;
+    }
+
+    nav {
+        width: 50%
+    }
+
+    .home {
+        justify-content: center;
+    }
+}
