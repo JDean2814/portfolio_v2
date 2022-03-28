@@ -1,0 +1,113 @@
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-light: #B5B4D9;
+    --clr-med: #7D7ABF;
+    --clr-dark: #393E59;
+    --clr-black: #0D0D0D;
+    --clr-red: #F22E62;
+    --fw-reg: 400;
+    --fw-bold: 700;
+}
+
+body {
+    margin: 0;
+    background-color: var(--clr-dark);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    line-height: 1.75rem;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+button {
+    border: none;
+    font-family: 'Roboto',sans-serif;
+    color: white;
+}
+
+header {
+    background-color: var(--clr-dark);
+    padding: 0 1em;
+    margin-bottom: 5rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+}
+
+.nav_list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-weight: var(--fw-bold);
+    letter-spacing: 1px; 
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 4px solid var(--clr-red);
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.light_circle {
+    height: 200px;
+    width: 200px;
+    background-color: var(--clr-med);
+    border-radius: 50%;
+    position: absolute;
+    top: 175px;
+    left: 70px;
+    z-index: -1;
+}
+
+.headshot {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.intro {
+    padding: 2em 0;
+    text-align: start;
+}
+
+.intro h2 {
+    color: var(--clr-light);
+}
+
+.hire_button {
+    height: 3em;
+    width: 8em;
+    border-radius: 10px;
+    background-color: var(--clr-red);
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: var(--fw-reg);
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
