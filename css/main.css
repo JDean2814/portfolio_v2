@@ -23,7 +23,15 @@ body {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: clamp(2em, 4vw, 4em);
+}
+
+h2 {
+    font-size: clamp(1.5em, 3vw, 3em);
+}
+
+li {
+    font-size: clamp(1em, 2vw, 2em);
 }
 
 button {
@@ -34,11 +42,20 @@ button {
 
 header {
     background-color: var(--clr-dark);
-    margin-bottom: 5rem;
+    margin-bottom: clamp(10rem, 15vw, 15em);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.logo-name h2 {
+    font-size: 2em;
 }
 
 nav {
@@ -68,20 +85,25 @@ nav {
     align-items: center;
 }
 
+.headshot-contain {
+    position: relative;
+    padding-left: 2rem;
+}
+
 .light_circle {
-    height: 200px;
-    width: 200px;
+    height: clamp(12em, 20vw, 20em);
+    width: clamp(12em, 20vw, 20em);
     background-color: var(--clr-med);
     border-radius: 50%;
     position: absolute;
-    top: 200px;
-    left: 70px;
+    right: 15%;
+    bottom: 15%;
     z-index: -1;
 }
 
 .headshot {
-    height: 200px;
-    width: 200px;
+    height: clamp(12em, 20vw, 20em);
+    width: clamp(12em, 20vw, 20em);
     border-radius: 50%;
 }
 
@@ -95,12 +117,12 @@ nav {
 }
 
 .hire_button {
-    height: 3em;
-    width: 8em;
+    height: clamp(3em, 4vw, 4em);
+    width: clamp(8em, 10.75vw, 10.75em);
     border-radius: 10px;
     background-color: var(--clr-red);
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: clamp(1em, 1.5vw, 1.5em);
     font-weight: var(--fw-reg);
 }
 
@@ -111,14 +133,16 @@ nav {
 
 @media (min-width: 475px) {
     header {
-        justify-content: start;
-    }
-
-    nav {
-        width: 50%
+        justify-content: space-evenly;
     }
 
     .home {
         justify-content: center;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+
+    nav {
+        width: 50%;
     }
 }
