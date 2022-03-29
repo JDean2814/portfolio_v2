@@ -27,11 +27,17 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(1.5em, 3vw, 3em);
+    font-size: clamp(2em, 3vw, 3em);
+    text-decoration: underline 6px var(--clr-red);
 }
 
 li {
     font-size: clamp(1em, 2vw, 2em);
+}
+
+p {
+    font-size: clamp(1em, 1.5vw, 1.5em);
+    font-weight: var(--fw-reg);
 }
 
 button {
@@ -39,6 +45,8 @@ button {
     font-family: 'Roboto',sans-serif;
     color: white;
 }
+
+/*Header and Nav*/
 
 header {
     background-color: var(--clr-dark);
@@ -54,8 +62,14 @@ header {
     align-items: center;
 }
 
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
 .logo-name h2 {
     font-size: 2em;
+    text-decoration: none;
 }
 
 nav {
@@ -75,14 +89,17 @@ nav {
 .nav-link {
     text-decoration: none;
     color: inherit;
-    border-bottom: 4px solid var(--clr-red);
+    text-decoration: underline 4px var(--clr-red);
 }
+
+/*Home Section*/
 
 .home {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: clamp(10rem, 20vw, 20em);
 }
 
 .headshot-contain {
@@ -90,7 +107,7 @@ nav {
     padding-left: 2rem;
 }
 
-.light_circle {
+.med_circle {
     height: clamp(12em, 20vw, 20em);
     width: clamp(12em, 20vw, 20em);
     background-color: var(--clr-med);
@@ -114,6 +131,8 @@ nav {
 
 .intro h2 {
     color: var(--clr-light);
+    font-size: clamp(1.5em, 3vw, 3em);
+    text-decoration: none;
 }
 
 .hire_button {
@@ -126,9 +145,31 @@ nav {
     font-weight: var(--fw-reg);
 }
 
-.logo {
-    height: 100px;
-    width: 100px;
+/*About Me Section*/
+
+.about_me {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.about_text {
+    width: clamp(20em, 30vw, 30em);
+    margin-bottom: 5em;
+}
+
+.circle_contain {
+    position: relative;
+}
+
+.light_circle {
+    height: clamp(12em, 20vw, 20em);
+    width: clamp(12em, 20vw, 20em);
+    background-color: var(--clr-light);
+    border-radius: 50%;
 }
 
 @media (min-width: 475px) {
@@ -138,7 +179,6 @@ nav {
 
     .home {
         justify-content: center;
-        margin: 0 auto;
         justify-content: space-evenly;
     }
 
