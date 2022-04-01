@@ -31,6 +31,10 @@ h2 {
     text-decoration: underline 6px var(--clr-red);
 }
 
+h3 {
+    font-size: 2rem;
+}
+
 li {
     font-size: clamp(1em, 2vw, 2em);
 }
@@ -44,6 +48,12 @@ button {
     border: none;
     font-family: 'Roboto',sans-serif;
     color: white;
+}
+
+section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: clamp(10rem, 20vw, 20em);
 }
 
 /*Header and Nav*/
@@ -99,7 +109,6 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: clamp(10rem, 20vw, 20em);
 }
 
 .headshot-contain {
@@ -148,12 +157,10 @@ nav {
 /*About Me Section*/
 
 .about_me {
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: clamp(10rem, 20vw, 20em);
 }
 
 .about_text {
@@ -174,11 +181,6 @@ nav {
 
 /*Skills Section*/
 
-.skills {
-    max-width: 70%;
-    margin: auto;
-}
-
 .skill_contain {
     display: flex;
     flex-wrap: wrap;
@@ -195,15 +197,101 @@ nav {
 #html_logo,
 #css_logo {
     position: absolute;
-    height: clamp(5em, 10vw, 10em);
-    width: clamp(5em, 10vw, 10em);
+    height: clamp(6em, 12vw, 12em);
+    width: clamp(6em, 12vw, 12em);
     top: 15%;
     left: 5%;
 }
 
 #logo_circle {
-    height: clamp(8em, 12vw, 12em);
-    width: clamp(8em, 12vw, 12em);
+    height: clamp(10em, 14vw, 14em);
+    width: clamp(10em, 14vw, 14em);
+}
+
+/*Project Section */
+
+.projects {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projects h2 {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.card {
+    background-color: var(--clr-med);
+    border-radius: 10px;
+    text-align: center;
+    height: clamp(22rem, 30vw, 30rem);
+    width: clamp(18rem, 24vw, 24rem);
+    margin-bottom: 3rem;
+}
+
+.card h3 {
+    margin: 0;
+    padding: 1rem;
+}
+
+.card img {
+    border-radius: 10px;
+    height: clamp(10rem, 15vw, 15rem);
+    width: clamp(15rem, 20vw, 20rem);
+}
+
+.descriptions {
+    margin: auto 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card p {
+    background-color: var(--clr-black);
+    width: fit-content;
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+/*Contact Section*/
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contact_form {
+    background-color: rgba(13, 13, 13, .6);
+    border-radius: 20px;
+    height: clamp(24rem, 42vw, 42rem);
+    width: clamp(20rem, 36vw, 36rem);
+    padding: 2rem 3rem;
+    display: grid;
+}
+
+#name, 
+#email, 
+#message {
+    border: 2px solid var(--clr-med);
+    border-radius: 5px;
+    background-color: transparent;
+    margin-bottom: 2rem;
+}
+
+#submit {
+    margin: 0 auto;
+    height: clamp(3rem, 3vw, 3rem);
+    width: clamp(6rem, 10vw, 10rem);
+    border: none;
+    border-radius: 5px;
+    font-weight: var(--fw-bold);
+    color: white;
+    background-color: var(--clr-red);
 }
 
 @media (min-width: 475px) {
