@@ -44,6 +44,10 @@ p {
     font-weight: var(--fw-reg);
 }
 
+label {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
 button {
     border: none;
     font-family: 'Roboto',sans-serif;
@@ -53,7 +57,8 @@ button {
 section {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: clamp(10rem, 20vw, 20em);
+    margin-top: clamp(10rem, 20vw, 20em);
+    width: 80%
 }
 
 /*Header and Nav*/
@@ -70,6 +75,7 @@ header {
 .logo-name {
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .logo {
@@ -185,7 +191,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-top: 5em;
+    margin-top: 4em;
 }
 
 .skill_item {
@@ -226,8 +232,8 @@ nav {
     background-color: var(--clr-med);
     border-radius: 10px;
     text-align: center;
-    height: clamp(22rem, 30vw, 30rem);
-    width: clamp(18rem, 24vw, 24rem);
+    height: clamp(24rem, 28vw, 28rem);
+    width: clamp(18rem, 20vw, 20rem);
     margin-bottom: 3rem;
 }
 
@@ -238,12 +244,13 @@ nav {
 
 .card img {
     border-radius: 10px;
-    height: clamp(10rem, 15vw, 15rem);
-    width: clamp(15rem, 20vw, 20rem);
+    height: clamp(10rem, 12vw, 12rem);
+    width: clamp(15rem, 17vw, 17rem);
+    margin-bottom: 1rem;
 }
 
 .descriptions {
-    margin: auto 2rem;
+    margin: 0 1.5rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -251,9 +258,11 @@ nav {
 }
 
 .card p {
+    margin: 0 1rem;
+    margin-bottom: 1rem;
     background-color: var(--clr-black);
     width: fit-content;
-    padding: .5rem;
+    padding: .5rem .75rem;
     border-radius: 10px;
 }
 
@@ -263,6 +272,10 @@ nav {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+.contact h2 {
+    margin-bottom: 4rem;
 }
 
 .contact_form {
@@ -285,13 +298,36 @@ nav {
 
 #submit {
     margin: 0 auto;
-    height: clamp(3rem, 3vw, 3rem);
+    height: clamp(3rem, 4vw, 4rem);
     width: clamp(6rem, 10vw, 10rem);
     border: none;
     border-radius: 5px;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     font-weight: var(--fw-bold);
     color: white;
     background-color: var(--clr-red);
+}
+
+/*Footer*/
+
+footer {
+    background-color: rgba(13, 13, 13, .6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials img {
+    height: clamp(3rem, 5vw, 5rem);
+    width: clamp(3rem, 5vw, 5rem);
+    margin-inline-end: 1rem;
 }
 
 @media (min-width: 475px) {
@@ -306,9 +342,5 @@ nav {
 
     nav {
         width: 50%;
-    }
-
-    .skills {
-        width: 65%;
     }
 }
