@@ -10,6 +10,7 @@
     --clr-dark: #393E59;
     --clr-black: #0D0D0D;
     --clr-red: #F22E62;
+    --clr-dark-red: #801934;
     --fw-reg: 400;
     --fw-bold: 700;
 }
@@ -39,6 +40,11 @@ li {
     font-size: clamp(1em, 2vw, 2em);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 p {
     font-size: clamp(1em, 1.5vw, 1.5em);
     font-weight: var(--fw-reg);
@@ -52,6 +58,12 @@ button {
     border: none;
     font-family: 'Roboto',sans-serif;
     color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--clr-dark-red);
+    color: rgb(155, 155, 155);
 }
 
 section {
@@ -103,9 +115,11 @@ nav {
 }
 
 .nav-link {
-    text-decoration: none;
-    color: inherit;
     text-decoration: underline 4px var(--clr-red);
+}
+
+.nav-link:hover {
+    text-decoration-color: var(--clr-dark-red);
 }
 
 /*Home Section*/
@@ -203,10 +217,10 @@ nav {
 #html_logo,
 #css_logo {
     position: absolute;
-    height: clamp(6em, 12vw, 12em);
-    width: clamp(6em, 12vw, 12em);
-    top: 15%;
-    left: 5%;
+    height: clamp(6em, 8vw, 8em);
+    width: clamp(6em, 8vw, 8em);
+    top: 25%;
+    left: 20%;
 }
 
 #logo_circle {
@@ -294,6 +308,7 @@ nav {
     border-radius: 5px;
     background-color: transparent;
     margin-bottom: 2rem;
+    color: white;
 }
 
 #submit {
@@ -308,6 +323,12 @@ nav {
     background-color: var(--clr-red);
 }
 
+#submit:hover {
+    cursor: pointer;
+    background-color: var(--clr-dark-red);
+    color: rgb(155, 155, 155);
+}
+
 /*Footer*/
 
 footer {
@@ -320,13 +341,19 @@ footer {
 
 .socials {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials a {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .socials img {
-    height: clamp(3rem, 5vw, 5rem);
-    width: clamp(3rem, 5vw, 5rem);
+    height: clamp(3rem, 4vw, 4rem);
+    width: clamp(3rem, 4vw, 4rem);
     margin-inline-end: 1rem;
 }
 
