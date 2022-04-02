@@ -115,7 +115,7 @@ nav {
 }
 
 .nav-link {
-    text-decoration: underline solid var(--clr-red) 4px;
+    text-decoration: underline solid var(--clr-red) 4px !important;
 }
 
 .nav-link:hover {
