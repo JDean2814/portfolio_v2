@@ -251,6 +251,11 @@ nav {
     margin-bottom: 3rem;
 }
 
+.card:hover {
+    cursor: pointer;
+    opacity: 75%;
+}
+
 .card h3 {
     margin: 0;
     padding: 1rem;
