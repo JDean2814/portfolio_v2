@@ -211,6 +211,8 @@ nav {
 .skill_item {
     position: relative;
     margin-bottom: 3em;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 #js_logo, 
@@ -289,7 +291,7 @@ nav {
 
 .contact {
     display: flex;
-    justify-content: space-evenly;
+    justify-content:start;
     flex-wrap: wrap;
 }
 
@@ -374,5 +376,9 @@ footer {
 
     nav {
         width: 50%;
+    }
+
+    .contact {
+        justify-content: space-evenly;
     }
 }
