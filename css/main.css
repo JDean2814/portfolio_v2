@@ -29,7 +29,10 @@ h1 {
 
 h2 {
     font-size: clamp(2em, 3vw, 3em);
-    text-decoration: underline solid var(--clr-red) 6px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: var(--clr-red);
+    text-decoration-thickness: 6px;
 }
 
 h3 {
@@ -115,7 +118,10 @@ nav {
 }
 
 .nav-link {
-    text-decoration: underline solid var(--clr-red) 4px !important;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: var(--clr-red);
+    text-decoration-thickness: 4px;
 }
 
 .nav-link:hover {
